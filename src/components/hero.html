@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <!-- Hero Section -->
+      <header id="hero" class="relative flex flex-col items-center justify-center text-center px-6 overflow-hidden" style="min-height: 100%; background: linear-gradient(135deg, rgba(250,248,245,0.95) 0%, rgba(251,246,237,0.92) 50%, rgba(242,234,220,0.95) 100%);">
+        <!-- Animated background elements -->
+        <div class="absolute inset-0 opacity-20" style="background: radial-gradient(ellipse 800px 600px at 50% 20%, rgba(201,169,110,0.15) 0%, transparent 70%);"></div>
+        <div class="absolute top-20 right-10 w-96 h-96 rounded-full opacity-10" style="background: radial-gradient(circle, #1B2A4A 0%, transparent 70%);"></div>
+        <div class="absolute bottom-32 left-5 w-72 h-72 rounded-full opacity-5" style="background: radial-gradient(circle, #C9A96E 0%, transparent 70%);"></div><!-- SVG ocean backdrop -->
+        <svg class="absolute inset-0 w-full h-full opacity-15" style="mix-blend-mode: multiply;" viewbox="0 0 1200 800" preserveaspectratio="xMidYMid slice">
+          <defs>
+            <filter id="wave-blur">
+              <fegaussianblur in="SourceGraphic" stddeviation="2" />
+            </filter>
+          </defs> <path d="M0,400 Q300,350 600,400 T1200,400 L1200,800 L0,800 Z" fill="#1B2A4A" opacity="0.08" filter="url(#wave-blur)" /> <path d="M0,450 Q300,400 600,450 T1200,450 L1200,800 L0,800 Z" fill="#2D4A7A" opacity="0.05" filter="url(#wave-blur)" /> <path d="M0,500 Q300,460 600,500 T1200,500 L1200,800 L0,800 Z" fill="#1B2A4A" opacity="0.04" filter="url(#wave-blur)" />
+        </svg><!-- Content -->
+        <div class="relative z-10 flex flex-col items-center justify-center">
+        <!-- Pre-heading -->
+          <div class="anim-fade-up anim-delay-1 font-sans-body text-xs tracking-[0.35em] uppercase mb-6" style="color: #A89F94;" id="hero-pre">
+            Self-Catering Coastal Retreat
+          </div><!-- Vertical line above title -->
+          <div class="anim-line mb-10 mx-auto" style="width: 1px; background: #C9A96E;"></div><!-- Main title -->
+            <h1 class="anim-fade-up anim-delay-2 font-serif-display font-normal leading-none mb-2" id="hero-title" style="color: #1A1A1A; font-size: clamp(3.5rem, 10vw, 8rem); letter-spacing: 0.06em;">La Vue</h1><!-- Subtitle -->
+            <h2 class="anim-fade-up anim-delay-3 font-serif-display font-normal italic leading-tight mb-8" id="hero-subtitle" style="color: #A89F94; font-size: clamp(1.1rem, 2.5vw, 1.8rem); letter-spacing: 0.12em; font-weight: 300;">Port Shepstone</h2><!-- Divider below subtitle -->
+            <div class="anim-fade-up anim-delay-4 mx-auto mb-10" style="width: 40px; height: 1px; background: #C9A96E;"></div><!-- Tagline -->
+              <p class="anim-fade-up anim-delay-5 font-serif-body text-lg md:text-xl tracking-wide max-w-lg" id="hero-tagline" style="color: #1A1A1A; font-weight: 300; line-height: 1.6;">Where the ocean meets quiet luxury</p><!-- CTA Button --> <a href="#about" id="hero-cta" class="anim-fade-up anim-delay-6 mt-16 font-sans-body text-xs tracking-[0.25em] uppercase py-4 px-8 md:px-10 transition-all duration-500" style="border: 1px solid #C9A96E; color: #C9A96E; background: transparent; display: inline-block; letter-spacing: 0.15em; position: relative; overflow: hidden;"> <span style="position: relative; z-index: 2;">Book Now</span> <span class="absolute inset-0" style="background: #C9A96E; transform: scaleX(0); transform-origin: left; transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1); z-index: 1;"></span> </a> <!-- Scroll indicator -->
+              <div class="anim-fade-up anim-delay-6 mt-20 flex flex-col items-center gap-3">
+                <div class="font-sans-body text-xs tracking-[0.2em] uppercase" style="color: #A89F94;">
+                Scroll
+                </div>
+                <div class="animate-bounce" style="color: #C9A96E;">
+                  <i data-lucide="chevron-down" style="width:18px;height:18px;"></i>
+                </div>
+              </div>
+        </div>
+      </header>
+</html>

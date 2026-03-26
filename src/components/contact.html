@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+    <!-- Contact Section -->
+  <section id="contact" class="px-6 md:px-12" style="padding-top: 120px; padding-bottom: 140px;">
+   <div class="max-w-5xl mx-auto">
+    <div class="reveal text-center mb-24">
+     <div class="font-sans-body text-xs tracking-[0.3em] uppercase mb-6" style="color: #C9A96E;">
+      Get In Touch
+     </div>
+     <h2 class="font-serif-display text-4xl md:text-5xl lg:text-6xl font-normal mb-8" id="contact-heading" style="color: #1A1A1A;">Begin Your Stay</h2>
+     <div class="thin-divider mx-auto"></div>
+    </div>
+    <div class="reveal grid grid-cols-1 lg:grid-cols-5 gap-12 md:gap-16 items-start"><!-- Form (left 3 cols) -->
+     <div class="lg:col-span-3">
+      <form id="contact-form" class="flex flex-col gap-12">
+       <!-- Name -->
+       <div class="flex flex-col">
+        <label for="cf-name" class="font-sans-body text-xs tracking-[0.25em] uppercase block mb-4" style="color: #1A1A1A; letter-spacing: 0.08em;">Name</label> <input type="text" id="cf-name" class="form-input" placeholder="Your full name" required>
+       </div><!-- Email -->
+       <div class="flex flex-col">
+        <label for="cf-email" class="font-sans-body text-xs tracking-[0.25em] uppercase block mb-4" style="color: #1A1A1A; letter-spacing: 0.08em;">Email</label> <input type="email" id="cf-email" class="form-input" placeholder="your@email.com" required>
+       </div><!-- Dates -->
+       <div class="flex flex-col">
+        <label for="cf-dates" class="font-sans-body text-xs tracking-[0.25em] uppercase block mb-4" style="color: #1A1A1A; letter-spacing: 0.08em;">Check-in &amp; Check-out</label> <input type="text" id="cf-dates" class="form-input" placeholder="15 – 20 December 2025" required>
+       </div><!-- Message -->
+       <div class="flex flex-col">
+        <label for="cf-message" class="font-sans-body text-xs tracking-[0.25em] uppercase block mb-4" style="color: #1A1A1A; letter-spacing: 0.08em;">Message</label> <textarea id="cf-message" class="form-input" rows="5" placeholder="Tell us about your perfect stay..." style="resize:none; border-bottom: 1px solid #A89F94; padding: 12px 0; font-family: 'Cormorant Garamond', Georgia, serif; font-size: 15px;" required></textarea>
+       </div><!-- Submit Button -->
+       <div class="mt-4 pt-4">
+        <button type="submit" id="submit-btn" class="font-sans-body text-xs tracking-[0.3em] uppercase py-4 px-10 transition-all duration-400 relative overflow-hidden inline-flex items-center gap-3" style="background: #1A1A1A; color: #FAF8F5; border: none; letter-spacing: 0.15em; border-radius: 2px; position: relative;"> <span class="relative z-10 flex items-center gap-3"> Book Your Stay <i data-lucide="arrow-right" style="width:14px;height:14px;stroke-width:2;transition:transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);"></i> </span> <span class="absolute inset-0" style="background: #C9A96E; transform: scaleX(0); transform-origin: left; transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1); z-index: 0; border-radius: 2px;"></span> </button>
+       </div><!-- Success Message -->
+       <div id="form-success" class="hidden p-6 rounded-sm" style="background: rgba(201,169,110,0.08); border-left: 2px solid #C9A96E;">
+        <div class="flex items-start gap-4">
+         <i data-lucide="check-circle" style="width:18px;height:18px;color:#C9A96E;flex-shrink:0;margin-top:2px;"></i>
+         <div>
+          <p class="font-sans-body text-sm font-medium" style="color: #C9A96E; letter-spacing: 0.05em;">Enquiry Received</p>
+          <p class="font-serif-body text-sm mt-1" style="color: #A89F94; font-weight: 300; line-height: 1.5;">We'll be in touch within 24 hours to confirm your preferred dates.</p>
+         </div>
+        </div>
+       </div>
+      </form>
+     </div><!-- Details Sidebar (right 2 cols) -->
+     <div class="lg:col-span-2">
+      <div class="space-y-10">
+       <!-- Location -->
+       <div>
+        <div class="flex items-start gap-3 mb-5">
+         <i data-lucide="map-pin" style="width:16px;height:16px;color:#C9A96E;flex-shrink:0;margin-top:2px;"></i>
+         <h3 class="font-sans-body text-xs tracking-[0.25em] uppercase" style="color: #1A1A1A; letter-spacing: 0.08em;">Location</h3>
+        </div>
+        <p class="font-serif-body text-sm leading-relaxed ml-6" style="color: #1A1A1A; font-weight: 300; line-height: 1.8;">1 King Haakon Road<br>
+          Oslo Beach<br>
+          Port Shepstone<br>
+          KwaZulu Natal<br>
+          South Africa, 4240</p>
+       </div><!-- Email -->
+       <div>
+        <div class="flex items-start gap-3 mb-5">
+         <i data-lucide="mail" style="width:16px;height:16px;color:#C9A96E;flex-shrink:0;margin-top:2px;"></i>
+         <h3 class="font-sans-body text-xs tracking-[0.25em] uppercase" style="color: #1A1A1A; letter-spacing: 0.08em;">Email</h3>
+        </div><a href="mailto:lavue.portshepstone@gmail.com" id="contact-email-display" class="font-serif-body text-sm ml-6 transition-colors duration-300 hover:text-opacity-100" style="color: #A89F94; font-weight: 300; display: inline-block;">lavue.portshepstone@gmail.com</a>
+       </div><!-- Divider -->
+       <div style="height: 1px; background: rgba(168,159,148,0.15);"></div><!-- Phone -->
+       <div>
+        <div class="flex items-start gap-3 mb-5">
+         <i data-lucide="phone" style="width:16px;height:16px;color:#C9A96E;flex-shrink:0;margin-top:2px;"></i>
+         <h3 class="font-sans-body text-xs tracking-[0.25em] uppercase" style="color: #1A1A1A; letter-spacing: 0.08em;">Telephone</h3>
+        </div><a href="tel:+27761632064" id="contact-phone-display" class="font-serif-body text-sm ml-6 transition-colors duration-300 hover:text-opacity-100" style="color: #A89F94; font-weight: 300; display: inline-block;">+27 76 163 2064</a>
+       </div><!-- Divider -->
+       <div style="height: 1px; background: rgba(168,159,148,0.15);"></div><!-- Social -->
+       <div>
+        <div class="font-sans-body text-xs tracking-[0.25em] uppercase mb-5" style="color: #1A1A1A; letter-spacing: 0.08em;">
+         Follow
+        </div>
+        <div class="flex gap-5 ml-0">
+         <a href="https://www.instagram.com/lavue_nps/" target="_blank" rel="noopener noreferrer" class="transition-colors duration-300" style="color: #A89F94;" onmouseover="this.style.color='#C9A96E'" onmouseout="this.style.color='#A89F94'" aria-label="Instagram"> <i data-lucide="instagram" style="width:16px;height:16px;"></i> </a> <a href="https://www.facebook.com/profile.php?id=" target="_blank" rel="noopener noreferrer" class="transition-colors duration-300" style="color: #A89F94;" onmouseover="this.style.color='#C9A96E'" onmouseout="this.style.color='#A89F94'" aria-label="Facebook"> <i data-lucide="facebook" style="width:16px;height:16px;"></i> </a>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+  </section>
+</html>
